@@ -11,8 +11,7 @@ public class Exercicio {
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		
-		
+			
 		try {
 			System.out.println("Enter account data");
 			System.out.print("Number: ");
@@ -35,8 +34,10 @@ public class Exercicio {
 		catch(DomainException e ) {
 			System.out.println("Withdraw error: " + e.getMessage());
 		}
-		
-		
+		catch (RuntimeException e) {
+			System.out.println("Unexpected error");
+		}
+				
 		sc.close();
 	}
 
