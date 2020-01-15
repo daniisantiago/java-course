@@ -6,6 +6,7 @@ public interface InterestService {
 	
 	double getInterestRate();
 	
+	//para reutilar o metodo
 	default double payment(double amount, int months) {
 		if(months < 1)
 			throw new InvalidParameterException("Months must br greater than zero");
