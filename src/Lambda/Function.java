@@ -1,14 +1,13 @@
 package Lambda;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 import java.util.stream.Collectors;
 
 import model.entities.Product;
 
-public class Fuction {
+public class Function {
 
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
